@@ -1,0 +1,68 @@
+/*  inicio de header */
+header{
+    height: 100px;
+    width: 100%;
+    & div{
+        display: flex;
+        margin-top: 1%;
+        width: 100%;
+        height: 40px;
+
+        & img{
+            width: 64px;
+            height: 32px;
+            opacity: 0.5;
+        }
+        & img:hover{
+            opacity: 1.0;
+        }
+        & h1{
+            height: 32px;
+            width: 100%;
+            color: $color-title;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 34px;
+            animation-duration: 3s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aparecer {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+    }
+    & nav{
+        & ul{
+            width: 100%;
+            list-style: none;
+            justify-content: space-around;
+            background-color: rgb(46, 37, 58);
+            display: flex;
+            font-size: 30px;
+            flex-wrap: wrap;
+
+            & li:hover{
+                background-color: cyan;
+            }
+
+            & li:active{
+                background-color:  rgb(100, 24, 136);
+            }
+            & li{
+                & a{
+                    color: darkcyan;
+                    text-decoration: none; /* Cambiar raya de URL */
+                    text-transform: capitalize;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+/* finaliza header */
+/*----------------------------- */

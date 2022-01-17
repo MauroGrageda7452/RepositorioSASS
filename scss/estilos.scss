@@ -1,0 +1,30 @@
+$fondo-caja-productos:rgb(35, 26, 46);
+$color-title:rgb(236, 236, 236);
+$borde-tabla-productos: 2px solid black;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{   
+    background-image:url(../multimedia/fondo.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;  
+    background-repeat: no-repeat;
+}
+
+section{
+    height: 803px;
+    width: 100%; 
+}
+
+@import "header";
+@import "SectionIndex";
+@import "SectionProductos";
+@import "SectionPromos";
+@import "SectionNosotros";
+@import "SectionContacto";
+@import "footer";

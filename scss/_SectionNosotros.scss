@@ -1,0 +1,50 @@
+/* inicio de section nosotros.hmtl */
+.contenedor__CajaNosotros{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-row-gap: 17.5em;  
+    grid-column-gap: 30px;
+
+    & .CajaQuienesSomos{
+        grid-column: 1/1;
+        grid-row: 1/2;
+        & .QuienesSomos{
+            background-color: rgb(35, 26, 46);
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(125, 16, 175);
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+    }
+    
+
+    & .CajaTextDueños{
+        grid-column: 1/1;
+        grid-row: 2/2;
+        & .TextDueños{
+            background-color: rgb(35, 26, 46);
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(125, 16, 175);
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+    & .CajaTiendaImg{
+        grid-column: 2/2;
+        grid-row: 1/4;
+        & .TiendaImg{
+            border: none;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+    } 
+}
+/* cierre de section nosotros.hmtl */
+/*----------------------------- */

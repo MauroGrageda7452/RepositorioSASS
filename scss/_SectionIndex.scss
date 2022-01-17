@@ -1,0 +1,91 @@
+
+/* Inicio de Section , pagina index.html*/
+.set_up{
+    width: 60%;
+    height: 225px;
+    margin: auto;
+    margin-bottom: 16px;
+    display: flex;
+    box-shadow: 10px 10px;
+}    
+/* dos columnas por 4 filas*/
+
+.contenedor__productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2%;
+    padding-right: 2%;
+    grid-column-gap: 2%;
+    
+    & .caja__productos{
+        border: none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+        & a{
+            text-decoration: none;
+            color: rgb(125, 16, 175);
+            font-size: 25px;
+        }
+
+        & a:hover{
+            background-color:  rgb(100, 24, 136);
+        }
+
+        & a:active{
+            background-color: cyan;
+        }
+    }
+    & .teclado__caja{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        background-color: $fondo-caja-productos;
+    }
+
+    & .mouse__caja{
+        grid-row: 1/1;
+        grid-column: 2/2;
+        background-color: $fondo-caja-productos;
+    }
+
+    & .pantalla__caja{
+        grid-column: 1/1;
+        grid-row: 3/3;
+        background-color: $fondo-caja-productos;
+    }
+    & .pc__caja{
+        grid-column: 2/2;
+        grid-row: 3/3;
+        background-color: $fondo-caja-productos;
+    }
+
+    & .img__TecladoCaja{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+
+    & .img__MouseCaja{
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    & .img__PantallaCaja{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+
+    & .img__PcCaja{
+        grid-column: 2/2;
+        grid-row: 4/4; 
+    }
+
+    & .imgs__prod{
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
+/* fin de Section de Index.html */
+/* ------------------------------*/

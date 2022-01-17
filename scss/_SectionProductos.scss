@@ -1,0 +1,27 @@
+/* inicio de Section de productos.html */
+
+
+table{
+    border-collapse: separate;
+    margin-left: 10px;
+    background-color: rgb(38, 73, 114); 
+    border: $borde-tabla-productos;
+    & tr{
+        & th{
+            height: 27px;
+            font-family: Arial;
+            text-transform: uppercase;
+            font-weight: bold;
+            color:#c8c8c8;
+            border: $borde-tabla-productos;
+        }
+        & td{
+            height: 27px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:#c8c8c8;
+            border: $borde-tabla-productos;
+        }
+    }
+}
+/* finaliza Section de productos.html*/
+/*----------------------------- */
